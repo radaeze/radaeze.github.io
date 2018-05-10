@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-STUFF
+STUFF AND MORE STUFF
