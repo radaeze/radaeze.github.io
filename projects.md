@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Blog
+permalink: /blog/
 ---
 
 STUFF AND MORE STUFF

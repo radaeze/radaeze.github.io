@@ -24,7 +24,7 @@ github_username: radaeze
 
 # Build settings
 markdown: kramdown
-theme: jekyll-swiss
+theme: 
 plugins:
   - jekyll-feed
 
