@@ -1,0 +1,14 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  excerpt: "Lets get to know one another."
+- title: Resume
+  url: /resume/
+  excerpt: "Lets reallllllly get to know onw another"
+- title: Projects
+  url: /projects/
+  excerpt: "I do stuff!"
+- title: Blog
+  url: /blog/
+  excerpt: "Where the writing happens."
