@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: "Ramia Davis"
-description: "Personal Blog"
+description: "Personal Site for Ramia Davis"
 logo: 
 teaser: subackg.jpg
 locale: en
@@ -24,12 +24,13 @@ gems:
   - jekyll-feed
 
 
-
+twitter_username: ramia_davis
+github_username: radaeze
+linkedin_username: ramia-davis
 # Site owner
 owner:
-  name:
-  email:
-  twitter:
+  name: Ramia Davis
+  email: ramia.davis@gmail.com
   google:
     ad-client:
     ad-slot:

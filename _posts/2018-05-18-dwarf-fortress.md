@@ -2,7 +2,8 @@
 layout: article
 title: Text as Graphics as Dwarves
 date: 2018-05-18 18:21 -0700
-categories: blog
+categories: writing
+share: false
 excerpt: "Dwarf Fortress is somewhat of a departure from the illusion of choice that has bogged down other digitally born literature."
 image:
   feature: dwarf-feature.png
