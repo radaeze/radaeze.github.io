@@ -12,18 +12,20 @@ share: false
 B.A. English Literature with minor in Computer Science  
 Overall G.P.A. 3.9 / Computer Science G.P.A. 4.0
 
-**Relevant Coursework**  
-	- Introduction to Computer Science (Java)  
-	- Intermediate Computer Science (Java)  
-	- Computer Architecture (Assembly)   
-	- Data Structures and Algorithms  
-	- Software Engineering (Ruby on Rails)  
-	- Introduction to Electronic Literature 
+**Relevant Coursework**   
 
-**Awards**	    
-- Phi Beta Kappa   
-- Mills Dean’s Scholarship    
-- Mills Academic Honors   
++ Introduction to Computer Science (Java)    
++ Intermediate Computer Science (Java)    
++ Computer Architecture (Assembly)    
++ Data Structures and Algorithms    
++ Software Engineering (Ruby on Rails)      
++ Introduction to Electronic Literature     
+
+**Awards**	
+    
++ Phi Beta Kappa   
++ Mills Dean’s Scholarship    
++ Mills Academic Honors   
 
 ### Skills
 **Languages**   
@@ -48,27 +50,31 @@ Interactive fiction game. Used an open source scripting language, Inkle, to hand
 San Francisco, CA    
 Technical Writing Intern    
 June 2018 – Present   
--Write and edit technical documentation for a PaaS application.   
--Maintain technical accuracy and writing consistency.         
+
++ Write and edit technical documentation for a PaaS application.   
++ Maintain technical accuracy and writing consistency.         
 
 **Mills College**                                                                     
 Oakland, CA    
 Peer Tutor     
 Introduction to Computer Science    
 September 2017 – May 2018    
--Tutored students enrolled in an introductory computer Java programming class.    
--Developed and implemented individual learning plans for students.    
+
++ Tutored students enrolled in an introductory computer Java programming class.    
++ Developed and implemented individual learning plans for students.    
 
 **Bain & Company**                                                               
 San Francisco, CA    
 Library Assistant Intern     
-March 2017 – May 2018    
-- Supported consultant teams with market data pulled and curated from business research firms as well as independent research. Projects include the TMT practice area, with a focus on semiconductors and cloud services.       
-- Maintains integrated library system for physical and digital materials.      
+March 2017 – May 2018   
+
++ Supported consultant teams with market data pulled and curated from business research firms as well as independent research. Projects include the TMT practice area, with a focus on semiconductors and cloud services.       
++ Maintains integrated library system for physical and digital materials.      
 
 **Oakland Unified School District**                                       
 Oakland, CA    
 Library Clerk     
-August 2016 - March 2017    
-- Encouraged student reading with curated recommendation lists and presentation materials.    
-- Organized computer programming study sessions and interest club.    
+August 2016 - March 2017  
+
++ Encouraged student reading with curated recommendation lists and presentation materials.    
++ Organized computer programming study sessions and interest club.    
