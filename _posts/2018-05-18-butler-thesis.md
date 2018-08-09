@@ -4,7 +4,7 @@ title: Don't Drink the Kool Aid&#58; Octavia Butler's Christianity and Cults in 
 date: 2018-05-18 18:21 -0700
 categories: writing
 share: false
-excerpt: "Bachelor's thesis on Octavia E. Butler's Parable series."
+excerpt: "Bachelor's thesis on Octavia E. Butler's Parable series"
 ---
  **Thesis Submitted in Fulfillment of Mills B.A. Degree in English Literature**
 

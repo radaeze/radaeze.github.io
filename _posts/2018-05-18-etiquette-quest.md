@@ -4,7 +4,7 @@ title: Etiquette Quest
 date: 2018-05-18 18:21 -0700
 categories: projects
 share: false
-excerpt: "Victorian dating simulator."
+excerpt: "Victorian dating simulator"
 ---
 <a href="https://radaeze.itch.io/etiquette-quest" class="btn">itch.io</a> <a href="https://github.com/kinggryan/GameOff2017" class="btn">GitHub</a>
 
