@@ -1,13 +1,10 @@
 ---
 layout: article
-title: Don't Drink the Kool Aid&#58; Octavia Butler's Chrisatnity and Cults in the <i>Parable</i> series
+title: Don't Drink the Kool Aid&#58; Octavia Butler's Christianity and Cults in the <i>Parable</i> series
 date: 2018-05-18 18:21 -0700
 categories: writing
 share: false
-excerpt: "Scholarship on religion in Octavia E. Butler's novels heavily skews towards a Judeo-Christin reading that ignores her fiction's radical nature."
-image:
-  feature: butler-feature.jpg
-  teaser: butler.jpg
+excerpt: "Bachelor's degree English thesis on Octavia E. Butler's Parable series."
 ---
  **Thesis Submitted in Fulfillment of Mills B.A. Degree in English Literature**
 

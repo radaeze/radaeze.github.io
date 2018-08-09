@@ -4,11 +4,10 @@ title: Text as Graphics as Dwarves
 date: 2018-05-18 18:21 -0700
 categories: writing
 share: false
-excerpt: "Dwarf Fortress is somewhat of a departure from the illusion of choice that has bogged down other digitally born literature."
-image:
-  feature: dwarf-feature.png
-  teaser: dwarf-teaser.png
+excerpt: "Critical review and explainer for the sandbox strategy game Dwarf Fortress."
 ---
+
+<a href="/downloads/dwarf-fort.docx" class="btn" download="Text as Graphics as Dwarves">Raw File</a>
 
 **Dwarf Fortress** is a single player, sandbox, strategy game in which you attempt to lead a group of dwarves in successfully building, maintaining and protecting a fortress. 
 
