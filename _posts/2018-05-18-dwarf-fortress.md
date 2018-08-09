@@ -4,7 +4,7 @@ title: Text as Graphics as Dwarves
 date: 2018-05-18 18:21 -0700
 categories: writing
 share: false
-excerpt: "Critical review and explainer for the sandbox strategy game Dwarf Fortress."
+excerpt: "Critical review, and explainer for the sandbox strategy game Dwarf Fortress."
 ---
 
 <a href="/downloads/dwarf-fort.docx" class="btn" download="Text as Graphics as Dwarves">Raw File</a>
