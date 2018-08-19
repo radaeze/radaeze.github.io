@@ -1,16 +1,18 @@
 ---
-title: Adding a Bot to a Concourse Pipeline
+title: Adding a Slack Bot to a Concourse Pipeline
 ---
 
-This topic explains how to add a bot that notifies a Slack channel of a pipeline group's build status. 
+This topic explains how to add a bot that notifies a Slack channel of the build status of a  pipeline group. 
+
+The procedure in this topic has already been performed for the `cf-current` pipeline. If you want to add the Slack bot to another pipeline, you only need to perform [Set and Update Pipeline](#set-update-pipeline). 
 
 ## <a id= "resource"></a>Slack Notification Resource Overview
 
 The Cloud Foundry Community organization provides a `slack-notification` resource type for sending notifications to Slack. To enable Slack notifications, you must add code blocks to specific YAML files in the pipeline. 
 
-In the PCF Doc pipelines, the YAML files that need to be edited are auto-generated when they are updated. When the YAML files are generated, edits that were directly added to these files are overwritten. 
+In the cf-docs pipelines, the YAML files that need to be edited are auto-generated when pipelines are updated. When these YAML files are generated, edits that were directly added to these files are overwritten. 
 
-To add code blocks to the necessary YAML files you must edit `scheme.rb` and `Rakefile`. These files generate and configure specific YAML files in a pipeline.  
+To add code blocks to the necessary YAML files you must edit `lib/pub_tools/scheme.rb` and `Rakefile`. These files generate and configure specific YAML files in a pipeline.  
 
 <p class="note"><strong>Note: </strong> This procedure could be altered to add other custom resource types to Concourse pipelines.</p>
 
@@ -22,31 +24,33 @@ The following procedure is adapted from the [Slack Notification tutorial](https:
 
 Slack provides an Incoming WebHook integration that can post messages from external sources to Slack. You can add this integration to Concourse pipelines to send messages to Slack about their build status. 
 
+<br>
+
 To set up the Slack WebHook:
 
 1. Go to the Slack integration page for [Incoming WebHooks](https://pivotal.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks) 
 
-1. Select the Slack channel that the bot should post to in Integration Settings
+1. Select the Slack channel that the bot should post to in **Integration Settings**
 
-1. Record the provided WebHook URL 
+1. Record the provided Webhook URL 
 
 1. Customize the Name and Icon
 
 1. **Save Settings**
 
-1. Open your `secrets.yml` file in your text editor
+1. Open `workspace/docs-concourse-creds/credentials.yml` in your text editor
 
-1. Add the following code block to your `secrets.yml` file:
+1. Add the following code block to `credentials.yml`:
 
    ```
    slack-webhook: YOUR-WEBHOOK-URL
    ```
 
-   Where `YOUR-WEBHOOK-URL` is the WebHook URL you recorded in step 3.
+   Where `YOUR-WEBHOOK-URL` is the Webhook URL you recorded in step 3.
 
 ### <a id= "add-resource-type"></a> Add Slack Resource Type
 
-The `slack-notification` resource type can be configured with the following code block: 
+You can configure the `slack-notification` resource type with the following code block: 
 
 ```
 resource_types:
@@ -57,13 +61,21 @@ resource_types:
     tag: latest
 ```
 
-You must add this code block to `pipeline.yml` for the Slack bot to work. You can do this by editing `Rakefile`.
+You must add this code block to `pipeline.yml` for the Slack bot to work. You can do this by editing the `Rakefile` in the `concourse-scripts-docs` directory.
+
+<br>
 
 To add the `slack-notification` resource type to the `pipeline.yml`:
 
-1. Open the `Rakefile` in your text editor
+1. Open `workspace/concourse-scripts-docs/Rakefile` in your text editor
 
-1. Add the `slack-notification` resource type code block to the code already present on line 154 as follows: 
+1. Go to the following line:
+
+    ```
+    File.write(File.join(pipeline_name, 'pipeline.yml'), "# Generated file...\n" + yaml)
+    ```
+
+1. Add the `slack-notification` resource type code block to the code already present as follows: 
 
 ```ruby
 File.write(File.join(pipeline_name, 'pipeline.yml'), "# Generated file...\n" + yaml + 
@@ -78,7 +90,7 @@ File.write(File.join(pipeline_name, 'pipeline.yml'), "# Generated file...\n" + y
 
 Once you have added the `slack-notification` resource type, you must add a resource of the `slack-notification` type. In this example, this resource is named `notify`.
 
-The `notify` resource can be configured with the following code block: 
+You can configure the `notify` resource with the following code block: 
 
 ```
 resources:
@@ -88,23 +100,41 @@ resources:
     url: ((slack-webhook))
 ```
 
-You must add this code block to `pipeline.yml` for the Slack bot to work. You can do this by editing `scheme.rb`.
+You must add this code block to `pipeline.yml` for the Slack bot to work. You can do this by editing the `scheme.rb` in the `concourse-scripts-docs` directory.
 
-To add the `notify` resource to the `pipeline.yml:
+<br>
 
-1. Open `scheme.rb` in your text editor
+To add the `notify` resource to the `pipeline.yml`:
 
-1. Add the `notify` resource to the code already present in the `deploy_resources` definition (line 91) as follows: 
+1. Open `workspace/concourse-scripts-docs/lib/pub_tools/scheme.rb` in your text editor
+
+1. Go to the `deploy_resources` definition 
+
+1. Add the `notify` resource to the code already present in the `deploy_resources` definition as follows: 
 
 ```ruby 
 def deploy_resources
+      [
+        {
+          'name' => 'concourse-scripts-bundle',
+          'type' => 's3',
+          'source' => {
+            'bucket' => 'concourse-interim-steps',
+            'versioned_file' => 'concourse-scripts-bundle.tar.gz',
+            'private' => true,
+            'access_key_id' => '{{aws-access-key}}',
+            'secret_access_key' => '{{aws-secret-key}}'
+          }
+        },
+
         {
           'name' => 'notify',
           'type' => 'slack-notification',
           'source' => {
            'url' => '((slack-webhook))'
-          }
-        } 
+            }
+        }
+    
       ]
     end
 ```
@@ -113,9 +143,9 @@ Since `deploy_resources` requires a specific format, the original `notify` resou
 
 ### <a id= "add-step-hook"></a> Add Step Hooks
 
-Concourse provides a `on_failure` step hook that runs when the parent step fails. You can add a `on_failure` step hook to a bind or deploy task. When the task fails, the `notify` resource is triggered and will send a message to a Slack channel. 
+Concourse provides a `on_failure` step hook that runs when the parent step fails. You can add a `on_failure` step hook to a bind or deploy task in a `plan.yaml` file. When the task fails, the `notify` resource is triggered and will send a message to a Slack channel. 
 
-The `on_failure` step hook can be configured with the following code block: 
+You can configure the `on_failure` step hook with the following code block: 
 
 ```
 on_failure:
@@ -125,25 +155,41 @@ on_failure:
 ```
 Where `BOT-MESSAGE` is the message that the Slack bot will post to a channel. 
 
-For a descriptive message, the bot message can be configured with Concourse metadata. For more information, see the Concourse CL Docs [Metadata section](https://concourse-ci.org/implementing-resources.html#resource-metadata).
+<p class="note"><strong>Note: </strong> For a descriptive message, you can configure the bot message with Concourse metadata. For more information, see the Concourse CL Docs <a href="https://concourse-ci.org/implementing-resources.html#resource-metadata">Metadata section</a>.</p>
+
+You must add the `on_failure` code block to `plan.yml` files for the Slack bot to work. You can do this by editing the `scheme.rb` in the `concourse-scripts-docs` directory.
+
+<br>
 
 To add the `on_failure` step hook to `plan.yml` files:
 
-1. Open `scheme.rb` in your text editor
+1. Open `workspace/concourse-scripts-docs/lib/pub_tools/scheme.rb` in your text editor
 
+1. Go to the `bind_plan` definition
 
-1. Add the `on_failure` step hook code block to the code already present in the `bind_plan` definition (line 27) as follows: 
+1. Add the `on_failure` step hook code block to the code already present in the `bind_plan` definition as follows: 
 
      ```ruby
      def bind_plan
+           aggregate = config.all_repos.map { |repo|
+             { 'get' => repo.friendly_name, 'resource' => repo.full_name, 'trigger' => repo.trigger, 'params' => { 'submodules' => 'none' } }
+           }
+
+           aggregate << { 'get' => 'bookbinder-release', 'resource' => 'bookbinder-release-complete', 'trigger' => true }
+
            [
-             { 'task' => "#{name}-bind", 'file' => "task.yml", 
+             { 'aggregate' => aggregate },
+             { 'task' => "#{name}-bind", 'file' => "concourse-scripts/#{pipeline}/#{group}/#{name}-bind/task.yml", 
              'on_failure' => {
                'put' => 'notify', 
                'params' => 
                    {'text' => 'BOT-MESSAGE'}
-              }
-              },
+             },
+             { 'aggregate' =>
+               [
+                 { 'put' => s3_resource, 'params' => { 'file' => 'bind_output/final_app.tar.gz'} },
+               ]
+             }
            ]
          end
 ``` 
@@ -152,10 +198,19 @@ To add the `on_failure` step hook to `plan.yml` files:
 
      ```ruby
       def deploy_plan(environment, stream_id, dependency, trigger)
+           previous_job = "#{name}-#{dependency}"
+           environment = environment.gsub('-', '_')
+
            [
-             
-             { 'task' => 'deploy', 'file' => 'deploy_task.yml', 'params' => {
-               'DEPLOY_DETAILS' => "config.yml",
+             {
+               'aggregate' => [
+                 { 'get' => 'concourse-scripts', 'resource' => 'concourse-scripts-docs-master', 'passed' => [previous_job]},
+                 { 'get' => 'concourse-scripts-bundle' },
+                 { 'get' => 'site-source', 'resource' => s3_resource, 'passed' => [previous_job], 'trigger' => trigger }
+               ]
+             },
+             { 'task' => 'deploy', 'file' => 'concourse-scripts/deploy_task.yml', 'params' => {
+               'DEPLOY_DETAILS' => "concourse-scripts/#{pipeline}/#{group}/config.yml",
                'DEPLOY_ENV' => environment,
                'BOOK_ID' => stream_id,
                'USERNAME' => "{{cloud-foundry-username}}",
@@ -167,7 +222,7 @@ To add the `on_failure` step hook to `plan.yml` files:
                    { 
                      'text' => 'BOT-MESSAGE'}
              }
-            }
+           }
            ]
          end
 ```
@@ -205,7 +260,4 @@ To apply these changes to `pipeline.yml` and the `plan.yml` files for a specific
 
 1. Confirm that the new configurations to the pipeline are correct when prompted
 
-1. Add, commit, and push the new configuration to GitHub
-
-
-After following this procedure, every time a Concourse build fails a notification will be sent to the specified Slack channel.
+1. Add, commit, and push the new configuration to Github
