@@ -27,17 +27,6 @@ twitter_username: ramia_davis
 github_username: radaeze
 linkedin_username: ramia-davis
 
-analytics: >
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89116368-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-89116368-2');
-  </script>
-
 # Site owner
 owner:
   name: Ramia Davis
