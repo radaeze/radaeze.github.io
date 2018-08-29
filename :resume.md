@@ -29,7 +29,8 @@ San Francisco, CA
 Technical Writing Intern    
 June 2018 – Present   
 
-+ Write and edit technical documentation for a PaaS application. Adhere to PCF documentation style guide to maintain consistency. Interview SMEs to maintain technical accuracy. Fix code formatting errors in internal wiki to facilitate team learning.   
++ Write and edit technical documentation for a PaaS application. Adhere to PCF documentation style guide to maintain consistency. Fix code formatting errors in internal wiki to facilitate team learning.   
++ Interview and pair with SMEs to maintain technical accuracy in documents
 + Paired with UX and PM interns to write a developer guide for novice PCF Tile developers. Supported usability testing sessions and card sorting exercises that generated feedback for revisions.
 + Programmed a Slack bot to send notifications when a Concourse build fails. Wrote a procedure explaining how the bot was built and how it can be configured to send other types of notifications.
 + Wrote original documentation on setting custom CA certificates.
@@ -40,7 +41,7 @@ Library Assistant Intern
 March 2017 – May 2018   
 
 + Supported consultant teams with market data curated from business research firms and independent research. Researched topics in the TMT practice area, focusing on semiconductors and cloud services.       
-+ Programmed an Excel marco to automate cell formatting for Jumpshot web traffic data, reducing the time needed to pull data from the source. Wrote a procedure explaining how to use and customize the marco.
++ Programmed an Excel macro to automate cell formatting for Jumpshot web traffic data, reducing the time needed to pull data from the source. Wrote a procedure explaining how to use and customize the macro.
 + Maintained an integrated library system. Culled outdated and discarded physical and digital materials from a catalog system, reducing the collection by roughly eighty percent.       
 
 **Oakland Unified School District**                                       
