@@ -53,9 +53,9 @@ August 2016 - March 2017
 + Presented themed book recommendation slides on a smart TV to passively encourage students to read advanced titles
 
 **Muji USA**                                                                                               
-Santa Monica, CA
-Sales Associate
-March 2014 - November 2016
+Santa Monica, CA    
+Sales Associate    
+March 2014 - November 2016    
 + Provided customer service and personalized recommendations for guests.
 
 ### Skills & Tools   
