@@ -4,7 +4,7 @@ title: MySQL Troubleshooting: Persistent Disk is Full
 date: 2018-11-01 18:21 -0700
 categories: writing
 share: false
-excerpt: "Troubleshooting topic for operators to fix persistent disk issues."
+excerpt: "Troubleshooting topic for MySQl operators."
 ---
 <a href="/downloads/troubleshoot.html.md.erb" class="btn" download="Full Persistent Disk">Raw File</a>  <a href="https://docs.pivotal.io/p-mysql/2-4/troubleshoot.html#persistent-disk" class="btn">Live Site</a>
 
