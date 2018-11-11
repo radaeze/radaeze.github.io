@@ -1,6 +1,6 @@
 ---
 layout: article
-title: MySQL Troubleshooting: Persistent Disk is Full
+title: MySQL Troubleshooting - Persistent Disk is Full
 date: 2018-11-01 18:21 -0700
 categories: writing
 share: false
