@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Projects
-permalink: /projects/ 
+title: Gaming Projects
+permalink: /projects/
 share: false
 ---
 <div class="tiles">

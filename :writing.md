@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Writing
+title: Professional Writing
 permalink: /writing/
 share: false
 ---

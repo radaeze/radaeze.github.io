@@ -1,17 +1,14 @@
 # Site navigation links
-- title: Writing
+- title: Professional Writing
   url: /writing/
-  excerpt: "Thoughts on video games and sci-fi"
-  
+  excerpt: "Technical documentation and academic essays"
 
-- title: Projects
+
+- title: Gaming Projects
   url: /projects/
-  excerpt: "Side projects I have worked on with love"
-  
+  excerpt: "Tiny video games and tabletop RPG guides"
+
 
 - title: Resume
   url: /resume/
-  excerpt: "What I have done and what I am doing."
-  
-
-
+  excerpt: "Professional and academic history"
