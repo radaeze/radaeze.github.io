@@ -24,7 +24,7 @@ Overall G.P.A. 3.9 / Computer Science G.P.A. 4.0
 + Mills Academic Honors   
 
 ### Professional Experience    
-**Pivotal Software**  
+**VMware (Pivotal Software)**  
 San Francisco, CA    
 
 Technical Writer     
@@ -32,6 +32,7 @@ October 2018 – Present
 
 + Write and edit technical documentation focusing on the MySQL and Single Sign-On products.
   Advocate for improvements as the documentation lead for the MySQL product.
++ Execute initiatives for improving and maintaining a publishing toolchain. 
 + Facilitate Team Health Assessments and Anxiety Parties, workshops that are designed to promote "teaminess" and psychological safety.
 + Present at college recruiting events about technical writing.
 + Facilitate working groups for editing an internal wiki and style guide.
