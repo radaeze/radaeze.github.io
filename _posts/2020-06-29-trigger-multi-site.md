@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Triggering Multi-Site Replication Failover and Switchover
-date: 2018-08-19 18:21 -0700
+date: 2020-06-29 18:21 -0700
 categories: writing
 tags:
   - technical writing
