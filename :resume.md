@@ -23,12 +23,19 @@ Overall G.P.A. 3.9 / Computer Science G.P.A. 4.0
 + Mills Dean’s Scholarship    
 + Mills Academic Honors   
 
-### Professional Experience    
+### Professional Experience 
+
+**Twitter**  
+San Francisco, CA
+
+Technical Writer
+June 2020 - Present
+
 **VMware (Pivotal Software)**  
 San Francisco, CA    
 
 Technical Writer     
-October 2018 – Present
+October 2018 – June 2020
 
 + Write and edit technical documentation focusing on the MySQL and Single Sign-On products.
   Advocate for improvements as the documentation lead for the MySQL product.
