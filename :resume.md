@@ -23,18 +23,26 @@ Overall G.P.A. 3.9 / Computer Science G.P.A. 4.0
 + Mills Dean’s Scholarship    
 + Mills Academic Honors   
 
-### Professional Experience    
-**Pivotal Cloud Foundry**  
+### Professional Experience 
+
+**Twitter**  
+San Francisco, CA
+
+Technical Writer
+June 2020 - Present
+
+**VMware (Pivotal Software)**  
 San Francisco, CA    
 
 Technical Writer     
-October 2018 – Present
+October 2018 – June 2020
 
 + Write and edit technical documentation focusing on the MySQL and Single Sign-On products.
   Advocate for improvements as the documentation lead for the MySQL product.
++ Execute initiatives for improving and maintaining a publishing toolchain. 
 + Facilitate Team Health Assessments and Anxiety Parties, workshops that are designed to promote "teaminess" and psychological safety.
 + Present at college recruiting events about technical writing.
-+ Lead a working group for editing the internal wiki.
++ Facilitate working groups for editing an internal wiki and style guide.
 
 Technical Writing Intern    
 June 2018 – September 2018   
@@ -71,7 +79,7 @@ Santa Monica, CA
 
 Sales Associate    
 March 2014 - November 2016  
-  
+
 + Provided customer service and personalized recommendations for guests.
 
 ### Skills & Tools   

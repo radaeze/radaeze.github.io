@@ -53,7 +53,6 @@ GEM
     sawyer (0.7.0)
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
-
 PLATFORMS
   ruby
   x64-mingw32
