@@ -1,5 +1,6 @@
 ---
 title: About Multi-Site Replication
+date: 2020-07-01
 introduction: "Conceptual document about the multi-site replication typology for MySQL for VMware Tanzu"
 actions:
   - label: "Live Site"

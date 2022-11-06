@@ -76,9 +76,6 @@ collections:
   gaming:
     output: true
     permalink: /:collection/:path/
-  academic:
-    output: true
-    permalink: /:collection/:path/
   technical:
     output: true
     permalink: /:collection/:path/
@@ -96,13 +93,6 @@ defaults:
   - scope:
       path: "_gaming"
       type: gaming
-    values:
-      layout: post
-      read_time: true
-  # _academic
-  - scope:
-      path: "_academic"
-      type: academic
     values:
       layout: post
       read_time: true

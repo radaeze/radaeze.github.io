@@ -1,5 +1,6 @@
 ---
 title: About Service Offerings
+date: 2020-07-01
 introduction: "Conceptual document about service offerings for Container Services Manager for VMware Tanzu"
 actions:
   - label: "Live Site"

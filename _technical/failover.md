@@ -1,5 +1,6 @@
 ---
 title: Triggering Multi-Site Replication Failover and Switchover
+date: 2020-07-01
 introduction: "Procedural document for triggering a failover or switchover in MySQL for VMware Tanzu"
 actions:
   - label: "Live Site"

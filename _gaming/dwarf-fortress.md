@@ -1,5 +1,6 @@
 ---
-title: Text as Graphics as Dwarves
+title: Text as Graphics as Dwarves (Review)
+date: 2017-11-30
 introduction: "Critical review and explainer for the sandbox strategy game, Dwarf Fortress"
 ---
 

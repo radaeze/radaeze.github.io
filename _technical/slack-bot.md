@@ -1,5 +1,7 @@
 ---
 title: Adding a Slack Bot to a Concourse Pipeline
+date: 2018-10-01
+published: false
 introduction: "Procedural document for adding a Slack bot to a Concourse pipeline"
 actions:
   - label: "Raw File"

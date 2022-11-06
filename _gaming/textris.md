@@ -1,6 +1,7 @@
 ---
 title: Textris
 introduction: "A cyberpunk, text adventure/Tetris mash-up. "
+date: 2018-04-25
 actions:
   - label: "itch.io"
     url: "https://teame.itch.io/textris"

@@ -1,5 +1,6 @@
 ---
 title: Getting Started Checklist
+date: 2020-07-01
 introduction: "Procedural document for configuring a minimal deployment of Container Services Manager for VMware Tanzu"
 actions:
   - label: "Live Site"
