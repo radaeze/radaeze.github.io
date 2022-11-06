@@ -1,0 +1,159 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rae Davis",
+    "label": "Technical Writer",
+    "website": "raedavis.me",
+    "summary": "Rae Davis is an L.A. native, Bay Area-based writer, with a background in English literature and computer science. They focus on the intersections between narrative and tech.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rae-wood-davis",
+        "url": "https://www.linkedin.com/in/rae-wood-davis/"
+      },
+      {
+        "network": "Twitter",
+        "username": "Rae Davis",
+        "url": "https://www.twitter.com/in/ramia_davis/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Twitter",
+      "position": "Senior Technical Writer",
+      "startDate": "Nov 2021",
+      "endDate": "Jan 2023",
+      "summary":"As a senior technical writer at Twitter, I wrote and edited internal technical documentation for machine learning tools. I also drove cross-team projects for improving the findability and quality of documentation.",
+      "highlights": [
+        "Drove a cross-team project for cleaning up documentation deadwood. Evaluated tooling dependencies to mitigate risk and managed relevant engineering work.",
+        "Consulted a on cross-team documentation portal for machine learning tools as the lead tech writer. Created information architecture for the portal and edited related customer journey documentation.",
+        "Created a template for documentation portals for listing cross-team resources. Updated documentation tooling code to make the template available from the command line.",
+        "Lead meetings and activities for improving team health and processes. This included a discussion on the Tuckman stages of team evolution.",
+
+      ],
+    },
+    {
+      "position": "Technical Writer",
+      "startDate": "June 2020",
+      "endDate": "Nov 2021",
+      "highlights": [
+        "Created self-serve resources for internal engineering teams to write high-quality documentation. This included a style guide, templates and guidelines for document types, information architecture best practices, and single-sourcing techniques.",
+        "Created templates to streamline engagements with engineering teams. This included templates for documentation plans, recommendations, and retros.",
+        "Taught a technical writing best practices course for internal teams. I taught over 500 students during my time at Twitter and had the highest NPS score among instructors for the course.",
+      ],
+    },
+    {
+      "company": "VMware",
+      "position": "Technical Writer",
+      "startDate": "Oct 2018",
+      "endDate": "June 2020",
+      "summary": "As a technical writer at VMware (Pivotal Software), I wrote and edited customer-facing technical documentation for MySQL and Single Sign-On products.",
+      "highlights": [
+        "Executed initiatives for improving and maintaining a publishing toolchain.",
+        "Facilitated Team Health Assessments and Anxiety Parties, workshops that are designed to promote “teaminess” and psychological safety.",
+        "Facilitated working groups for editing an internal wiki and style guide.",         
+        "Presented at college recruiting events about technical writing."
+      ]
+    },
+    {
+      "position": "Technical Writer Intern ",
+      "startDate": "June 2018",
+      "endDate": "Oct 2018",
+      "highlights": [
+        "Paired with UX and PM interns to refresh a developer guide for building software on the platform. Led usability testing sessions that generated feedback for revisions.",
+        "Implemented a Slack bot to send notifications when a build for the documentation website failed. Wrote a procedure explaining how the bot was built and how it can be configured to send other types of notifications."
+      ],
+    },
+    {
+      "company": "Bain & Company",
+      "position": "Library Assistant Intern ",
+      "startDate": "March 2017",
+      "endDate": "May 2018",
+      "summary": "As a library assistant intern at Bain & Company, I was responsible for providing clerical and research support for the Information Services Department.",
+      "highlights": [
+        "Supported consultant teams with market data curated from business research firms and independent research. Researched topics in the TMT practice area, focusing on semiconductors and cloud services.",
+        "Created an Excel macro to automate cell formatting for Jumpshot web traffic data, reducing the time needed to pull data from the source. Wrote a procedure explaining how to use and customize the macro."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mills College",
+      "area": "English Language and Literature",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2016",
+      "endDate": "2018",
+      "courses": [
+        "Introduction to Programming",
+        "Computer Concepts and Intermediate Programming",
+        "Software Engineering"
+      ],
+    },
+    {
+      "institution": "Columbia University in the City of New York",
+      "area": "English Language and Literature",
+      "startDate": "2010",
+      "endDate": "2012",
+    }
+  ],
+  "awards": [
+    {
+      "title": "Phi Beta Kappa",
+      "date": "2018",
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technical Writing",
+      "keywords": [
+        "Information architecture",
+        "docs-as-code",
+        "usability testing",
+      ]
+    },
+    {
+      "name": "Documentation Tooling",
+      "keywords": [
+        "Sphinx",
+        "Jekyll",
+        "Git",
+        "GitHub",
+        "Sublime Text",
+      ]
+    },
+        {
+      "name": "Markup Languages",
+      "keywords": [
+        "Markdown",
+        "reStructuredText",
+        "HTML",
+        "CSS",
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "Ruby",
+        "Java",
+      ]
+    },
+    {
+      "name": "Agile Methodologies",
+      "keywords": [
+        "Scrum master",
+        "Jira",
+        "Pivotal Tracker",
+      ]
+    },
+    {
+      "name": "Game Development",
+      "keywords": [
+        "Unity",
+        "Inky",
+        "Twine",
+      ]
+    }
+  ]
+}
