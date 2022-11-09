@@ -1,6 +1,7 @@
 ---
 title: About Highly Available Clusters
 date: 2020-07-01
+published: false
 introduction: "Conceptual document about the highly available cluster typology for MySQL for Pivotal Platform"
 actions:
   - label: "Live Site"

@@ -11,4 +11,4 @@ actions:
     url: "/downloads/nested.rst"
 ---
 
-_Rae Davis wrote this procedure for internal engineering teams at Twitter in support of a documentation findability initiative. The writing sample has been altered to remove confidential information._
+_Rae Davis wrote this procedure for internal engineering teams in support of a documentation findability initiative. The writing sample has been altered to remove confidential information._
