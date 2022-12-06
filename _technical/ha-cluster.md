@@ -2,7 +2,7 @@
 title: About Highly Available Clusters
 date: 2020-07-01
 published: false
-introduction: "Conceptual document about the highly available cluster typology for MySQL for Pivotal Platform"
+introduction: "Conceptual document about the highly available cluster topology for MySQL for Pivotal Platform"
 actions:
   - label: "Live Site"
     url: "https://web.archive.org/web/20210307014444/https://docs.pivotal.io/p-mysql/2-5/about-ha.html"
