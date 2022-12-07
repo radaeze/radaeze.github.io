@@ -1,30 +1,30 @@
 Quick Start Guide
 =================
 
-This page provides procedures for getting started with Framework. Use this page to onboard or evaluate Framework.
+This page explains how to get started with Framework. Use this page to onboard or evaluate Framework.
 
 Overview
 --------
 
-In this quick start, your use Framework to transform a ``DataRecord`` into a ``tf.Example`` by creating a ``TransformPlan`` and then using that plan in a job. After the transform, you can inspect the generated ``tf.Example`` sample record with a notebook. 
+In this quick start guide, you use Framework to transform a ``DataRecord`` into a ``tf.Example`` by creating and running a ``TransformPlan``. After the transform, you can inspect the generated ``tf.Example`` sample record with a notebook. 
 
-In this quick start guide, you do the following:
+To get started with Framework, do the following:
 
 #. :ref:`generate_transform`
 #. :ref:`transform_record`
 #. :ref:`read_output`
 
-After completing this quick start guide, you can use it as a template for you own use case. 
+After you complete this quick start guide, use the procedures in this page as a template for your own use case. For example, you could use the generated sample record in a training or validation dataset for a machine learning model.
 
 .. note::
-	
-	For instructions for integrating Framework in a pipeline, see `Build Your First Pipeline <https://example.com>`_ in the Model Training customer journey. 
+   
+   For instructions for integrating Framework in a machine learning pipeline, see `Build Your First Pipeline <https://example.com>`_ in the Model Training customer journey. 
 
 
 Prerequisites
 ~~~~~~~~~~~~~
 
-To complete the procedures on this page, you must have the following:
+To complete the procedures in this page, you must have the following:
 
 - **Access to cloud storage:** For instructions, see `Gain Permissions for Cloud Storage <https://example.com>`_. 
 - **A DataRecord specification JSON file in cloud storage:** For instructions, see `Upload to Cloud Storage <https://example.com>`_.
@@ -34,7 +34,7 @@ In this quick start guide, we assume you are familiar with the following:
 - **DataRecord:** See `About DataRecord <https://example.com>`_.
 - **Cloud Storage:** See the `Cloud Storage <https://example.com>`_ documentation.
 - **Notebooks:** See the `Notebook <https://example.com>`_ documentation. 
-	
+   
 
 .. _generate_transform:
 
@@ -47,7 +47,7 @@ For a full example of the following code, see the `ExampleTransformGenerator <ht
 
 .. tip::
 
-	When you create your own class file, use the `ExampleTransformGenerator <https://example.com>`_ source code as a template. 
+   When you create your own class file, use the `ExampleTransformGenerator <https://example.com>`_ source code as a template. 
 
 To generate a ``TransformPlan`` from Framework metadata:
 
@@ -55,15 +55,15 @@ To generate a ``TransformPlan`` from Framework metadata:
 
    .. code-block:: python
 
-		FeatureContext fc = ContextUtil.loadFromStorage (
-		  "PROJECT-ID"
-		  "STORAGE-NAME"
-		  "PATH-TO-DATA-SPEC"
-		  "DATA-SPEC-NAME"
-		);
+      FeatureContext fc = ContextUtil.loadFromStorage (
+        "PROJECT-ID"
+        "STORAGE-NAME"
+        "PATH-TO-DATA-SPEC"
+        "DATA-SPEC-NAME"
+      );
 
-		DatasetMetadata datasetMetadata = 
-		DatasetMetadataBuilder.buildDatasetMetadata(fc);
+      DatasetMetadata datasetMetadata = 
+      DatasetMetadataBuilder.buildDatasetMetadata(fc);
 
    Where ``PATH-TO-DATA-SPEC`` is the path to your JSON file in cloud storage.
 
@@ -71,7 +71,7 @@ To generate a ``TransformPlan`` from Framework metadata:
 
    For example::
 
-   	  REDACTED
+        REDACTED
 
 #. Create a ``BUILD`` file that includes a transform generator target. For an example, see the `example_transform target <https://example.com>`_ source code. 
 
@@ -105,7 +105,7 @@ To transform a ``DataRecord`` to a ``tf.Example`` using a ``TransformPlan``:
 
     REDACTED
 
-   Ensure that you replace the highlighted values with your own cloud storage details. 
+   Ensure that you replace the highlighted values in the above example with your own cloud storage details. 
 
    For a full example of the above config, see the `example.config <https://example.com>`_ source code.
 
